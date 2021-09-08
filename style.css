@@ -1,0 +1,298 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(Montserrat-Medium.ttf);
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #4B45B2;
+    color: white;
+}
+
+nav {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    padding: 2rem;
+    min-height: 10vh;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav a:hover{
+    color: #FF6584;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+  
+nav ul {
+    display: flex;
+    flex: 1 1 40rem;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+nav ul li {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#logo {
+    width: 130px;
+    margin-right: 40rem;
+}
+
+.hero {
+    min-height: 90vh;  
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.hero-text{
+    flex: 2 1 30rem;
+    padding: 20rem;
+}
+
+.hero-img {
+    flex: 1 1 40rem;
+    margin-top: 30rem;
+    position: relative;
+}
+
+.hero-text h2 {
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
+.hero-text h3 {
+    font-size: 4.8rem;
+    font-weight: bold;
+}
+
+h3 span {
+    color: #FF6584;
+}
+
+.hero-text h4 {
+    font-size: 3.6rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+}
+
+.hero-text a {
+    background-color: #FF6584;
+    padding: 1rem 2rem;
+    margin-right: 3rem;
+    font-size: 1.5rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.hero-text a:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.btn-blue {
+    background-color: #433EA0!important;
+}
+
+.hero-img img{
+    width: 55rem;
+}
+
+.moon {
+    position:absolute;
+    top: -20rem;
+    left: 50rem;
+    width: 15rem!important;
+}
+
+.star {
+    width: 2.5rem!important;
+    position: absolute;
+}
+
+.star1{
+    top: -10rem;
+    left: 2rem;
+}
+
+.star2{
+    top: 10rem;
+    left: -1rem;
+}
+
+.star3{
+    top: 15rem;
+    left: 50rem;
+}
+
+.star4{
+    top: -10rem;
+    left: 20rem;
+}
+
+.star5{
+    top: -20rem;
+    left: 30rem;
+}
+
+.star6{
+    top: -13rem;
+    right: 30rem;
+}
+
+.star7{
+    top: -1rem;
+    right: 20rem;
+}
+
+.star8{
+    top: -23rem;
+    left: -8rem;
+}
+
+.star9{
+    top: 0;
+    left: -5rem;
+}
+
+.star10{
+    top: -25rem;
+}
+
+.star11{
+    left: 7rem;
+}
+
+.star12{
+    right: 5rem;
+}
+
+.rocket {
+    width: 10rem!important;
+    position: absolute;
+    top: -35rem;
+    left: 18rem;
+    transform: rotate(65deg);
+}
+
+.fire {
+    width: 5rem!important;
+    position: absolute;
+    top: -29rem;
+    left: 13rem;
+    transform: rotate(-110deg);
+    animation: fire 2s infinite alternate;
+}
+
+.first-animation {
+    transition: all 1s ease;
+    animation: first-animation .7s ease;
+    animation-iteration-count: infinite;
+}
+
+.second-animation {
+    transition: all 1s ease;
+    animation: second-animation .9s ease;
+    animation-iteration-count: infinite;
+}
+
+.third-animation {
+    transition: all 1s ease;
+    animation: third-animation 1s ease;
+    animation-iteration-count: infinite;
+}
+
+.moon-animation {
+    animation: moon-animation 5s infinite linear;
+}
+
+@keyframes fire {
+    0%,
+    100% {
+        left: 120px;
+    }
+
+    50% {
+        left: 135px;
+    }
+}
+
+@keyframes first-animation {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.22); }
+}
+
+@keyframes second-animation {
+    0%, 100% { transform: scale(0.8); }
+    50% { transform: scale(1); }
+}
+
+@keyframes third-animation {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.3); }
+}
+
+@keyframes moon-animation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+.galaxy {
+    position: absolute;
+    width: 7rem!important;
+}
+
+.galaxy-1 {
+    top: -30rem;
+    right: 30rem;
+    animation: moon-animation 9s infinite linear;
+}
+
+.galaxy-2 {
+    top: -27rem;
+    left: 3rem;
+    animation: moon-animation 7s infinite linear;
+}
+
+@media only screen and (max-width: 1274px) {
+    .hero-img {
+        flex:100%;
+    }
+    
+    .hero-text h2 {
+        flex:100%;
+    }
+    
+    .hero {
+        flex-direction: column-reverse;
+    }
+}
+
+@media only screen and (max-width: 766px) {
+    .hero-text {
+        padding: 10rem;
+        text-align: center;
+    }
+}
