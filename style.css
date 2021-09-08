@@ -15,7 +15,6 @@ html {
 
 body {
     font-family: "Montserrat", sans-serif;
-    background-color: #4B45B2;
     color: white;
 }
 
@@ -63,6 +62,11 @@ nav ul li {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    background-color: #4B45B2;
+}
+
+.main-head {
+    background-color: #4B45B2;
 }
 
 .hero-text{
@@ -347,3 +351,127 @@ h3 span {
         left: 30rem;
     }
 }
+
+
+/*-----ABOUT-------*/
+
+.about {
+    height: 100vh;
+    background-color: #847DFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about-img img {
+    width: 60%;
+    height: auto;
+    margin-left: 10rem;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.about-img {
+    display: flex;
+    flex: 50%;
+}
+
+.about-text {
+    flex: 50%;
+    position: relative;
+}
+
+.about-text h2 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin-bottom: 5rem;
+}
+
+.about-text p {
+    font-size: 1.7rem;
+    padding-right: 20rem;
+    margin-bottom: 5rem;
+}
+
+@media only screen and (max-width: 900px) {
+    .about-img {
+        flex: 100%;
+        align-items: center;
+        justify-content: center;
+        margin-top: 3rem;
+    }
+    
+    .about-text {
+        flex: 100%;
+        padding: 5rem;
+    }
+    .about-img img {
+        width: 50%;
+        margin: 0;
+    }
+    .about-text p{
+        padding-right: 0;
+    }
+}
+
+.skills {
+    background-color: #847DFF;
+    display: flex;
+    flex-direction: column;
+}
+
+.skills img {
+    width: 18%;
+}
+
+
+.line {
+    width: 35%!important;
+}
+
+.line-2 {
+    transform: scaleX(-1);
+}
+
+.skills-container h2{
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
+.htmlcss {
+    width: 25%!important;
+}
+
+.skills-container{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.skills-container img {
+    padding: 5rem;
+}
+
+.tech {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+@media only screen and (max-width: 1300px) {
+    .skills img {
+        width: 25%!important;
+        padding: 5rem;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .skills img {
+        width: 25%!important;
+        padding: 2rem;
+    }
+    .line {
+        width: 80%!important;
+    }
+}
+
