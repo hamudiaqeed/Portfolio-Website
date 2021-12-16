@@ -63,6 +63,7 @@ nav ul li {
     align-items: center;
     flex-wrap: wrap;
     background-color: #4B45B2;
+    padding: 15px;
 }
 
 .main-head {
@@ -280,6 +281,12 @@ h3 span {
     animation: moon-animation 7s infinite linear;
 }
 
+@media only screen and (max-width: 1620px) {
+    .moon, .rocket, .galaxy, .fire{
+        display: none;
+    }
+}
+
 @media only screen and (max-width: 1286px) {
     .hero-img {
         flex:100%;
@@ -295,6 +302,11 @@ h3 span {
     .hero-text {
         padding: 10rem;
         text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .moon, .rocket, .galaxy, .fire{
+        display: none;
     }
 }
 
@@ -313,6 +325,9 @@ h3 span {
         padding: 10rem;
         text-align: center;
     }
+    .moon {
+        left: 40rem;
+    }
 }
 
 @media only screen and (max-width: 800px) {
@@ -320,7 +335,7 @@ h3 span {
         width: 40rem;
     }
     .moon {
-        left: 35rem;
+        display: none;
     }
     .hero-text {
         padding: 10rem;
@@ -348,21 +363,31 @@ h3 span {
         display: none;
     }
     .moon {
-        left: 30rem;
+        display: none;
     }
+}
+
+@media only screen and (max-width: 560px) {
+    .hero-text a{
+        display: flex;
+        margin: 20px;
+        flex-direction: column;
+    }   
 }
 
 
 /*-----ABOUT-------*/
 
 .about {
-    height: 100vh;
+    height: 100%;
     background-color: #847DFF;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    padding: 15px;
+    width: 100%;
 }
 
 .about-img img {
@@ -395,6 +420,10 @@ h3 span {
     margin-bottom: 5rem;
 }
 
+.about {
+    padding-bottom: 20px;
+}
+
 @media only screen and (max-width: 900px) {
     .about-img {
         flex: 100%;
@@ -420,12 +449,16 @@ h3 span {
     background-color: #847DFF;
     display: flex;
     flex-direction: column;
+    padding: 20px;
 }
 
 .skills img {
     width: 18%;
 }
 
+.invisible {
+    opacity: 0;
+}
 
 .line {
     width: 35%!important;
@@ -436,8 +469,9 @@ h3 span {
 }
 
 .skills-container h2{
-    font-size: 2.4rem;
+    font-size: 4.6rem;
     font-weight: bold;
+    margin-bottom: 20px;
 }
 
 .htmlcss {
@@ -460,18 +494,20 @@ h3 span {
 
 @media only screen and (max-width: 1300px) {
     .skills img {
-        width: 25%!important;
+        width: 200px;
         padding: 5rem;
     }
 }
 
 @media only screen and (max-width: 900px) {
     .skills img {
-        width: 25%!important;
+        width: 150px!important;
         padding: 2rem;
     }
-    .line {
-        width: 80%!important;
+    
+    .line, .tech{
+        margin: 20px;
     }
 }
+
 
