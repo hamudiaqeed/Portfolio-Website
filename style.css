@@ -16,6 +16,8 @@ html {
 body {
     font-family: "Montserrat", sans-serif;
     color: white;
+    padding: 35px;
+    background-color: white;
 }
 
 nav {
@@ -35,6 +37,7 @@ nav a:hover{
 a {
     color: white;
     text-decoration: none;
+    font-size: 2.4rem;
 }
   
 nav ul {
@@ -292,6 +295,10 @@ h3 span {
         flex:100%;
     }
     
+    a {
+        font-size: 1.8rem;
+    }
+    
     .hero-text h2 {
         flex:100%;
     }
@@ -341,6 +348,10 @@ h3 span {
         padding: 10rem;
         text-align: center;
     }
+
+    body {
+        padding: 0;
+    }
 }
 
 @media only screen and (max-width: 700px) {
@@ -373,6 +384,10 @@ h3 span {
         margin: 20px;
         flex-direction: column;
     }   
+
+    .star10 {
+        display: none!important;
+    }
 }
 
 
@@ -472,6 +487,8 @@ h3 span {
     font-size: 4.6rem;
     font-weight: bold;
     margin-bottom: 20px;
+    text-decoration-line: underline;
+    text-decoration-style: double;
 }
 
 .htmlcss {
