@@ -18,7 +18,7 @@ body {
     font-family: "Montserrat", sans-serif;
     color: white;
     background-color: #847DFF;
-    
+    overflow-x: hidden;
 }
 
 nav {
@@ -651,6 +651,10 @@ h3 span {
     border-width: 10px 10px 10px 0;
     border-color: transparent white transparent transparent;
 }
+
+.timeline {
+    z-index: 100;
+}
   
 .left::after, .right::after {
     left: 15px;
@@ -668,12 +672,28 @@ h3 span {
     margin: 40px;
 }
 
+.for-video {
+    position: relative;
+    margin-bottom: 100px;
+}
+
+video {
+    z-index: -1;
+    width: 100%;
+    position: absolute;
+    border-radius: 50px;
+    height: 700px;
+
+}
+
+
 /* FOOTER */
 
 footer {
     position: relative;
     overflow: hidden;
     margin-top: 40px;
+    width: 100%;
 }
 
 footer img {
@@ -709,6 +729,12 @@ footer img {
     flex-direction: column;
 }
 
+@media only screen and (max-width: 1140px) {
+    video {
+        display: none;
+    }
+}
+
 @media only screen and (max-width: 1180px) {
     .footer-content {
         margin-top: -50px;
@@ -717,4 +743,5 @@ footer img {
     .footer-content a {
         font-size: 2.4rem;
     }
-  }
+}
+
