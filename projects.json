@@ -33,5 +33,12 @@
       "projectname": "Huddi",
       "projectimage": "https://i.postimg.cc/Kvcn47s0/huddi.png",
       "projectgithub": "https://github.com/hamudiaqeed/Huddi"
+    },
+    {
+      "id": 6,
+      "projectlive": "https://hamudiaqeed.github.io/Huddi-Cinema/",
+      "projectname": "Huddi Cinema",
+      "projectimage": "https://i.postimg.cc/9MxWSzHj/huddicinema.png",
+      "projectgithub": "https://github.com/hamudiaqeed/Huddi-Cinema"
     }
   ]
